@@ -2,13 +2,12 @@
 
 namespace TransferMate.Models
 {
-    public class Memory : IMemory
+    public class Memory : BaseData, IMemory
     {
-
-        public string ComponentType { get; set; }
-        public string PartNumber { get; set; }
-        public string Name { get; set; }
-        public string Type { get; set; }
-        public double Price { get; set; }
+        public override string ComponentType { get; set; }
+        public override string PartNumber { get; set; }
+        public override string Name { get; set; }
+        public override string Type { get; set; }
+        public override double Price { get; set; }
     }
 }
