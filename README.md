@@ -13,6 +13,7 @@ The possible parts are CPU, Motherboard and Memory. You can choose to enter 1, 2
 ### Sample Input:
 <br />
 Good cases:<br />
+<br />
 Cores:<br />
 1)Core - 12900K <br />
 2)Core and memory- 12900K, KS16GB<br />
@@ -31,6 +32,7 @@ Memory:<br />
 
 <br />
 Bad cases:<br />
+<br />
 Cores:<br />
 1) Core - 129000<br />
 2) Core and memory - 5500, KS16GB<br />
