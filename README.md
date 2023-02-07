@@ -11,76 +11,66 @@ Test task that calculates all the possible combinations between user-inputed com
 The possible parts are CPU, Motherboard and Memory. You can choose to enter 1, 2 or all parts and check if they are compatible with one another. If not, the program will throw an exception.
 
 ### Sample Input:
-
-Good cases:
-Cores:
+<br />
+Good cases:<br />
+Cores:<br />
 1)Core - 12900K <br />
 2)Core and memory- 12900K, KS16GB<br />
 3)Core, Memory, Motherboard - 7950X, SM32GB, MSIX670E<br />
+<br />
+Motherboards:<br />
+1)Motherboard - ASX670E<br />
+2)Motherboard and CPU - ASX670E, 7950X<br />
+3)Motherboard and memory - ASUSB450, 5500<br />
+4)Motherboard, CPU and Memory - MSIZ590, 11700K, GS8GB<br />
 
-Motherboards:
-1)Motherboard - ASX670E
-2)Motherboard and CPU - ASX670E, 7950X
-3)Motherboard and memory - ASUSB450, 5500
-4)Motherboard, CPU and Memory - MSIZ590, 11700K, GS8GB
+Memory:<br />
+1)Memory - KS16GB<br />
+2)Memory and Motherboard - CR8GB, 5500<br />
+3)Memory, Motherboard and CPU - KS16GB, 7950X, MSIX670E<br />
 
-Memory:
-1)Memory - KS16GB
-2)Memory and Motherboard - CR8GB, 5500
-3)Memory, Motherboard and CPU - KS16GB, 7950X, MSIX670E
+<br />
+Bad cases:<br />
+Cores:<br />
+1) Core - 129000<br />
+2) Core and memory - 5500, KS16GB<br />
+3) Core and motherboard - 5600X, MSIZ590 <br />
 
+Motherboard:<br />
+1) Core, memory and motherboard - MSIZ590, 5500, KS16GB<br />
+2) Motherboard and CPU - ASX670E, 12500<br />
 
-Bad cases:
-Cores:
-1) Core - 129000
-2) Core and memory - 5500, KS16GB
-3) Core and motherboard - 5600X, MSIZ590 
-
-Motherboard:
-1) Core, memory and motherboard - MSIZ590, 5500, KS16GB
-2) Motherboard and CPU - ASX670E, 12500
-
-Memory:
-1) Memory and CPU - KS16GB, 5500
-2) Memory, CPU and Motherboard - KS16GB, 5500, ASUSZ690
+Memory:<br />
+1) Memory and CPU - KS16GB, 5500<br />
+2) Memory, CPU and Motherboard - KS16GB, 5500, ASUSZ690<br />
 
 ### Raw input
 
 Good inputs:
-12900K
-12900K, KS16GB
-7950X, SM32GB, MSIX670E
-ASX670E
-ASX670E, 7950X
-ASUSB450, 5500
-MSIZ590, 11700K, GS8GB
-KS16GB
-CR8GB, 5500
-KS16GB, 7950X, MSIX670E
+12900K<br />
+12900K, KS16GB<br />
+7950X, SM32GB, MSIX670E<br />
+ASX670E<br />
+ASX670E, 7950X<br />
+ASUSB450, 5500<br />
+MSIZ590, 11700K, GS8GB<br />
+KS16GB<br />
+CR8GB, 5500<br />
+KS16GB, 7950X, MSIX670E<br />
 
 
 Bad inputs:
-129000
-5500, KS16GB
-5600X, MSIZ590 
-MSIZ590, 5500, KS16GB
-ASX670E, 12500
-KS16GB, 5500
-KS16GB, 5500, ASUSZ690
-KS16GB, ASUSZ690
-KS16GB, GBB560M
-MSIX570, GS8GB
+129000<br />
+5500, KS16GB<br />
+5600X, MSIZ590 <br />
+MSIZ590, 5500, KS16GB<br />
+ASX670E, 12500<br />
+KS16GB, 5500<br />
+KS16GB, 5500, ASUSZ690<br />
+KS16GB, ASUSZ690<br />
+KS16GB, GBB560M<br />
+MSIX570, GS8GB<br />
 
-
-
-### Installation
-
-Setup to run the project: 
-1. Clone the repo
-```sh
-git clone https://gitlab.com/team-gsg/olzo.git
-```
-2. Run the project
 
 
 ## See also
