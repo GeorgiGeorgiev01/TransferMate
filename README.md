@@ -23,7 +23,7 @@ Motherboards:<br />
 2)Motherboard and CPU - ASX670E, 7950X<br />
 3)Motherboard and memory - ASUSB450, 5500<br />
 4)Motherboard, CPU and Memory - MSIZ590, 11700K, GS8GB<br />
-
+<br />
 Memory:<br />
 1)Memory - KS16GB<br />
 2)Memory and Motherboard - CR8GB, 5500<br />
