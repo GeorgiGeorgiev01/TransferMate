@@ -40,7 +40,7 @@ Cores:<br />
 
 Motherboard:<br />
 1) Core, memory and motherboard - MSIZ590, 5500, KS16GB<br />
-2) Motherboard and CPU - ASX670E, 12500<br />
+2)  Motherboard and CPU - ASX670E, 12500<br />
 
 Memory:<br />
 1) Memory and CPU - KS16GB, 5500<br />
