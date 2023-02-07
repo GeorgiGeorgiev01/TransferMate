@@ -14,9 +14,9 @@ The possible parts are CPU, Motherboard and Memory. You can choose to enter 1, 2
 
 Good cases:
 Cores:
-1)Core - 12900K
-2)Core and memory- 12900K, KS16GB
-3)Core, Memory, Motherboard - 7950X, SM32GB, MSIX670E
+1)Core - 12900K <br />
+2)Core and memory- 12900K, KS16GB<br />
+3)Core, Memory, Motherboard - 7950X, SM32GB, MSIX670E<br />
 
 Motherboards:
 1)Motherboard - ASX670E
