@@ -46,7 +46,7 @@ Memory:<br />
 
 ### Raw input
 
-Good inputs:
+Good inputs:<br />
 12900K<br />
 12900K, KS16GB<br />
 7950X, SM32GB, MSIX670E<br />
@@ -59,7 +59,7 @@ CR8GB, 5500<br />
 KS16GB, 7950X, MSIX670E<br />
 
 
-Bad inputs:
+Bad inputs:<br />
 129000<br />
 5500, KS16GB<br />
 5600X, MSIZ590 <br />
@@ -84,10 +84,10 @@ https://gitlab.com/users/GeorgiGeorgiev93/contributed
 
 <!-- CONTACT -->
 ## Contact
-
+<br />
 Georgi Georgiev - georgi_georgiev_93@abv.bg      https://www.linkedin.com/in/georgi-georgiev-94151a259/ 
-
-Project Link: (https://gitlab.com/team-gsg/olzo/-/tree/master)
+<br />
+Last Project Link: (https://gitlab.com/team-gsg/olzo/-/tree/master)
 
 
 
