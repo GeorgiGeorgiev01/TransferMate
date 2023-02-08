@@ -24,6 +24,7 @@ if (data != null)
 
 //Main logic
 while (true)
+    
 {
     Console.WriteLine("Please enter part number(s):");
     try
@@ -147,7 +148,7 @@ static List<IBaseData> FindMotherboard(List<IBaseData> products, string? motherb
 /// </summary>
 /// <param input="string"></param>
 /// <returns> Prints all the combinations. </returns>
-static void PrintData(IBaseData cpu, List<IBaseData> motherboards, List<IBaseData> memories, int? combinationCount)
+static void PrintData(IBaseData cpu, List<IBaseData> motherboards, List<IBaseData> memories, ref int? combinationCount)
 {
     foreach (var motherboard in motherboards)
     {
@@ -215,7 +216,7 @@ static List<IBaseData> FindCombinations(IBaseData cpu, IBaseData motherboard, IB
 /// </summary>
 /// <param input="string"></param>
 /// <returns> All combinations. </returns>
-static int? CalculateCombinations(IBaseData cpu, IBaseData memory, IBaseData motherboard, List<IBaseData> products, ref List<IBaseData> totalCombinations)
+static int? CalculateCombinations(IBaseData cpu,  IBaseData motherboard, IBaseData memory, List<IBaseData> products, ref List<IBaseData> totalCombinations)
 {
     if (totalCombinations.Any(x => typeof(CPU).IsAssignableFrom(x.GetType())))
     {
@@ -232,6 +233,11 @@ static int? CalculateCombinations(IBaseData cpu, IBaseData memory, IBaseData mot
             }
             Console.WriteLine($"Total Combinations: {count}");
             return count;
+        }
+        else
+        {
+            Console.WriteLine($"Total Combinations: {totalCombinations.Count}");
+            return totalCombinations.Count();
         }
     }
 
@@ -293,7 +299,7 @@ static void PrintingCombinations(IBaseData cpu, IBaseData motherboard, IBaseData
                 tempMemories.Add(memory);
             }
 
-            PrintData(compatibleCpu, tempMotherBoards, tempMemories, combinationCount);
+            PrintData(compatibleCpu, tempMotherBoards, tempMemories, ref combinationCount);
         }
     }
     else
@@ -322,7 +328,7 @@ static void PrintingCombinations(IBaseData cpu, IBaseData motherboard, IBaseData
                 tempMemories.Add(memory);
             }
 
-            PrintData(compatibleCpu, tempMotherBoards, tempMemories, combinationCount);
+            PrintData(compatibleCpu, tempMotherBoards, tempMemories, ref combinationCount);
         }
         //Reseting the counter to 1, otherwise the next input combination will not start from 1
         combinationCount = 1;
